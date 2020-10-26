@@ -1,6 +1,6 @@
 function fetchUsers(){
 
-    fetch('http://localhost:4000', {
+    fetch('http://localhost:4000/graphql', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: '{ users { id name avatar posts } }' }),
